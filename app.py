@@ -152,6 +152,15 @@ plt.title(
 plt.xticks(rotation=45)
 st.pyplot(plt)
 
+
+plt.figure(figsize=(12, 6))
+sns.violinplot(data=data, x=selected_symptom_2, y=selected_measure, hue=selected_hue)
+plt.title(
+    f"Violin Plot of {selected_measure} by {selected_symptom_2} (Hue: {selected_hue})"
+)
+plt.xticks(rotation=45)
+st.pyplot(plt)
+
 # Add more visualizations as needed
 
 # Summary statistics
