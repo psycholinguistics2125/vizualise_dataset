@@ -134,7 +134,7 @@ selected_measure = st.selectbox(
 
 # Select variable for hue
 selected_hue = st.selectbox(
-    "Select Variable for Hue", data.columns[1:7].tolist() + [None], index=6
+    "Select Variable for Hue", data.columns[1:8].tolist() + [None] , index=6
 )  # Assuming variables start from column 11
 
 # Select symptom for x-axis
