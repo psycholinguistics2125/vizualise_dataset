@@ -152,6 +152,7 @@ plt.title(
 plt.xticks(rotation=45)
 st.pyplot(plt)
 
+st.header("Box Plot visualization")
 
 plt.figure(figsize=(12, 6))
 sns.violinplot(data=data, x=selected_symptom_2, y=selected_measure, hue=selected_hue)
