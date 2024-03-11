@@ -40,6 +40,7 @@ st.sidebar.title("Filters")
 # Load data
 
 data = load_features_and_meta(load_config())
+#data['full_and_partial_PTSD'] = data['full_or_partial_PTSD'] + data['PTSD_probable']
 
 
 # Filter by sexe
@@ -140,7 +141,7 @@ selected_hue = st.selectbox(
 # Select symptom for x-axis
 selected_symptom_2 = st.selectbox(
     "Select Symptom",
-    data.filter(regex=r"probable").columns.tolist() + ["full_or_partial_PTSD"],
+    data.filter(regex=r"probable").columns.tolist() + ["full_or_partial_PTSD", "full_and_partial_PTSD"],
     index=7,
 )
 
